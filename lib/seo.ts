@@ -10,8 +10,8 @@ export const defaultTitle = "Evallish BPO | Contact Center & BPO"
 export const defaultDescription =
   "Evallish BPO is a business process outsourcing company located in Santiago, Dominican Republic. We handle inbound and outbound calls, emails, and live chat to improve customer loyalty and revenue."
 
-export const ogImage = "/opengraph-image"
-export const twitterImage = "/twitter-image"
+export const ogImage = "/evallish-logo.jpg"
+export const twitterImage = "/evallish-logo.jpg"
 
 export const contact = {
   phone: "+18094178954",
@@ -58,7 +58,7 @@ export function buildMetadata({ title, description, path }: BuildMetadataOptions
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: `${siteName} - Contact Center & BPO`,
+          alt: `${siteName} logo`,
         },
       ],
     },
