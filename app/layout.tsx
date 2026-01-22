@@ -1,7 +1,6 @@
 ﻿import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/components/language-provider"
 import {
   address,
@@ -134,7 +133,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         <LanguageProvider>{children}</LanguageProvider>
-        <Analytics />
       </body>
     </html>
   )

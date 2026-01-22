@@ -14,7 +14,7 @@ export const ogImage = "/evallish-logo.jpg"
 export const twitterImage = "/evallish-logo.jpg"
 
 export const contact = {
-  phone: "+18094178954",
+  phone: "+18094899899",
   email: "info@evallishbpo.com",
 }
 

@@ -4,12 +4,59 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowRight, Phone, Mail, MapPin, Globe } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
 import { useLanguage } from "@/components/language-provider"
 import { site } from "@/lib/translations"
 
 export function CtaSection() {
   const { t, language } = useLanguage()
   const contact = t.home.contact
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
+  const statusMessage =
+    language === "es"
+      ? {
+          success: "¡Gracias! Recibimos tu solicitud y te contactaremos pronto.",
+          error: "No pudimos enviar tu solicitud. Intenta de nuevo.",
+        }
+      : {
+          success: "Thanks! We received your request and will reach out soon.",
+          error: "We could not send your request. Please try again.",
+        }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    if (isSubmitting) return
+
+    setIsSubmitting(true)
+    setStatus("idle")
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+    const body = new URLSearchParams()
+    formData.forEach((value, key) => {
+      body.append(key, String(value))
+    })
+
+    try {
+      const response = await fetch("https://formspree.io/f/mwvvdewp", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      })
+      if (!response.ok) {
+        throw new Error("Request failed")
+      }
+      form.reset()
+      setStatus("success")
+    } catch (error) {
+      setStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <section id="contact" className="py-24 lg:py-32 bg-gray-50">
@@ -85,7 +132,7 @@ export function CtaSection() {
             <h3 className="text-xl font-bold text-gray-900 mb-2">{contact.form.title}</h3>
             <p className="text-gray-600 mb-8">{contact.form.description}</p>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
@@ -93,6 +140,8 @@ export function CtaSection() {
                   </label>
                   <Input
                     id="firstName"
+                    name="firstName"
+                    required
                     placeholder={contact.form.placeholders.firstName}
                     className="h-12 bg-gray-50 border-gray-200"
                   />
@@ -103,6 +152,8 @@ export function CtaSection() {
                   </label>
                   <Input
                     id="lastName"
+                    name="lastName"
+                    required
                     placeholder={contact.form.placeholders.lastName}
                     className="h-12 bg-gray-50 border-gray-200"
                   />
@@ -115,7 +166,9 @@ export function CtaSection() {
                 </label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
+                  required
                   placeholder={contact.form.placeholders.workEmail}
                   className="h-12 bg-gray-50 border-gray-200"
                 />
@@ -127,6 +180,8 @@ export function CtaSection() {
                 </label>
                 <Input
                   id="company"
+                  name="company"
+                  required
                   placeholder={contact.form.placeholders.company}
                   className="h-12 bg-gray-50 border-gray-200"
                 />
@@ -138,6 +193,8 @@ export function CtaSection() {
                 </label>
                 <select
                   id="service"
+                  name="service"
+                  required
                   className="w-full h-12 px-4 rounded-lg bg-gray-50 border border-gray-200 text-gray-900 focus:ring-2 focus:ring-primary/20 focus:border-primary"
                 >
                   <option value="">{contact.form.placeholders.serviceDefault}</option>
@@ -155,6 +212,7 @@ export function CtaSection() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   placeholder={contact.form.placeholders.message}
                   className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-900 focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none"
@@ -163,11 +221,22 @@ export function CtaSection() {
 
               <Button
                 type="submit"
+                disabled={isSubmitting}
                 className="w-full h-12 bg-primary hover:bg-primary/90 text-white font-semibold text-base"
               >
-                {contact.form.submit}
+                {isSubmitting ? (language === "es" ? "Enviando..." : "Sending...") : contact.form.submit}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
+
+              {status !== "idle" && (
+                <p
+                  className={`text-sm text-center ${
+                    status === "success" ? "text-green-600" : "text-red-600"
+                  }`}
+                >
+                  {status === "success" ? statusMessage.success : statusMessage.error}
+                </p>
+              )}
 
               <p className="text-xs text-gray-500 text-center">
                 {contact.form.privacyPrefix}{" "}

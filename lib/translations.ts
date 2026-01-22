@@ -1,10 +1,10 @@
 ﻿export const site = {
   phone: {
-    display: "+1 (809) 417-8954",
-    href: "tel:+18094178954",
+    display: "809-489-9899",
+    href: "tel:+18094899899",
   },
   email: "info@evallishbpo.com",
-  whatsapp: "https://wa.me/18094178954",
+  whatsapp: "https://wa.me/18094899899",
   mapLink: "https://maps.app.goo.gl/QycGmG4918B9JUWi6",
   address: {
     en: "Las Tres Cruces, Jacagua. San Francisco de Jacagua, Santiago, Dominican Republic 50000",
@@ -2029,7 +2029,7 @@ export const translations = {
         map: "Google Maps",
       },
       bottom: {
-        rights: "Todos los derechos reservados. Diseñado por JJ.",
+        rights: "Todos los derechos reservados. Diseñado por Kyros Soluctions.",
         language: "Inglés + Español",
         model: "Nearshore + Remoto",
       },
