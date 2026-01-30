@@ -24,11 +24,108 @@ export const translations = {
         home: "Home",
         services: "Services",
         about: "About Us",
+        careers: "Careers",
         contact: "Contact",
       },
       viewAllServices: "View all services",
       cta: "Get Started",
       languageLabel: "Language",
+    },
+    careers: {
+      hero: {
+        pill: "Join Evallish BPO",
+        titlePrefix: "Build your career with",
+        titleHighlight: "Evallish",
+        description:
+          "We are a bilingual contact center in Santiago, Dominican Republic, focused on service excellence and people-first culture. Explore opportunities and grow with us.",
+        primaryCta: "Apply Now",
+        secondaryCta: "See vacancies",
+      },
+      about: {
+        eyebrow: "Life at Evallish",
+        title: "A team that supports your growth",
+        description:
+          "We combine nearshore expertise, multichannel operations, and continuous training to help you build a solid career path.",
+        highlights: [
+          "Bilingual English & Spanish environment",
+          "Training, coaching, and QA support",
+          "Modern facilities and collaborative teams",
+          "Performance-based growth opportunities",
+        ],
+      },
+      values: [
+        {
+          title: "People First",
+          description: "We care about our team and create a respectful, supportive environment.",
+        },
+        {
+          title: "Customer Focus",
+          description: "We deliver experiences that create loyalty and long-term relationships.",
+        },
+        {
+          title: "Technology + Process",
+          description: "We use proven tools and workflows to deliver consistent results.",
+        },
+        {
+          title: "Learning Culture",
+          description: "Ongoing training to grow your skills and confidence.",
+        },
+      ],
+      openings: {
+        eyebrow: "Vacancies",
+        title: "Roles you can apply for",
+        description:
+          "These are common roles in our contact center. Availability may vary by campaign and language level.",
+        roles: [
+          {
+            title: "Customer Service Agent",
+            description: "Inbound support via phone, chat, email, and WhatsApp.",
+            type: "Full-time",
+          },
+          {
+            title: "Sales & Telemarketing",
+            description: "Outbound campaigns, lead qualification, and conversions.",
+            type: "Full-time",
+          },
+          {
+            title: "Technical Support",
+            description: "Troubleshooting and real-time help for clients.",
+            type: "Full-time",
+          },
+          {
+            title: "Quality & Training",
+            description: "Coaching, monitoring, and process improvements.",
+            type: "Full-time",
+          },
+        ],
+        primaryCta: "Apply Now",
+        helper: "All applications are handled through our careers portal.",
+      },
+      process: {
+        eyebrow: "How it works",
+        title: "Simple application process",
+        description: "Complete your application online and our team will contact you if your profile matches.",
+        stepLabel: "Step",
+        steps: [
+          {
+            title: "Apply online",
+            description: "Choose a position and submit your information.",
+          },
+          {
+            title: "Evaluation",
+            description: "We review your experience and language level.",
+          },
+          {
+            title: "Interview",
+            description: "If selected, we schedule a call and next steps.",
+          },
+        ],
+      },
+      cta: {
+        title: "Ready to start your journey?",
+        description: "Apply today and join a team that values growth, excellence, and collaboration.",
+        button: "Apply Now",
+      },
     },
     home: {
       hero: {
@@ -441,10 +538,22 @@ export const translations = {
         title: "Our Team",
         description: "Leadership focused on people, process, and performance.",
         members: [
-          { name: "Hugo Hidalgo", role: "President & Founder" },
-          { name: "Lariely Candelario", role: "Operations Manager" },
-          { name: "Nittida Castillo", role: "Operations Supervisor" },
-          { name: "Luis Estevez", role: "QA & Training Lead" },
+          { name: "Hugo Hidalgo", role: "President & CEO", image: "/hugo-hidalgo.jpeg" },
+          {
+            name: "Lariely Candelario",
+            role: "Commercial & Administrative Director",
+            image: "/Lariely-Candelario.jpeg",
+          },
+          { name: "Emely Rodriguez", role: "Training & Quality", image: "/emely-rodriguez.jpeg" },
+          { name: "Loreinny Rojas", role: "Operations Supervisor", image: "/loreinny-rojas.jpeg" },
+          { name: "Alan Sánchez", role: "IT Support", image: "/alan-sanchez.jpeg" },
+          {
+            name: "Vanyely Peralta",
+            role: "Human Resources & Organizational Culture Manager",
+            image: "/Vanyely-Peralta.jpeg",
+          },
+          { name: "Yelissa Mezon", role: "Project Supervisor", image: "/Yelissa-Mezon.jpeg" },
+          { name: "Dahiana Valoy", role: "CFO", image: "/Dahiana-Valoy.jpeg" },
         ],
       },
       industries: {
@@ -1012,6 +1121,7 @@ export const translations = {
         about: "About Us",
         solutions: "Solutions",
         blogs: "Blogs",
+        careers: "Careers",
         contact: "Contact Us",
       },
       contactLinks: {
@@ -1033,11 +1143,108 @@ export const translations = {
         home: "Inicio",
         services: "Servicios",
         about: "Nosotros",
+        careers: "Vacantes",
         contact: "Contacto",
       },
       viewAllServices: "Ver todos los servicios",
       cta: "Comenzar",
       languageLabel: "Idioma",
+    },
+    careers: {
+      hero: {
+        pill: "Únete a Evallish BPO",
+        titlePrefix: "Construye tu carrera en",
+        titleHighlight: "Evallish",
+        description:
+          "Somos un contact center bilingüe en Santiago, República Dominicana, enfocado en la excelencia y en las personas. Explora oportunidades y crece con nosotros.",
+        primaryCta: "Aplicar ahora",
+        secondaryCta: "Ver vacantes",
+      },
+      about: {
+        eyebrow: "Vida en Evallish",
+        title: "Un equipo que impulsa tu crecimiento",
+        description:
+          "Combinamos experiencia nearshore, operación multicanal y capacitación continua para que construyas un camino profesional sólido.",
+        highlights: [
+          "Ambiente bilingüe inglés y español",
+          "Capacitación, coaching y soporte de calidad",
+          "Instalaciones modernas y equipos colaborativos",
+          "Crecimiento basado en desempeño",
+        ],
+      },
+      values: [
+        {
+          title: "Personas primero",
+          description: "Cuidamos a nuestro equipo y fomentamos un entorno respetuoso.",
+        },
+        {
+          title: "Enfoque en el cliente",
+          description: "Creamos experiencias que generan lealtad.",
+        },
+        {
+          title: "Tecnología y procesos",
+          description: "Usamos herramientas y flujos probados para resultados consistentes.",
+        },
+        {
+          title: "Cultura de aprendizaje",
+          description: "Formación continua para potenciar tus habilidades.",
+        },
+      ],
+      openings: {
+        eyebrow: "Vacantes",
+        title: "Roles disponibles para aplicar",
+        description:
+          "Estos son roles comunes en nuestro contact center. La disponibilidad puede variar por campaña y nivel de idioma.",
+        roles: [
+          {
+            title: "Agente de Servicio al Cliente",
+            description: "Soporte inbound por teléfono, chat, email y WhatsApp.",
+            type: "Tiempo completo",
+          },
+          {
+            title: "Ventas y Telemarketing",
+            description: "Campañas outbound, calificación de leads y cierres.",
+            type: "Tiempo completo",
+          },
+          {
+            title: "Soporte Técnico",
+            description: "Diagnóstico y ayuda en tiempo real para clientes.",
+            type: "Tiempo completo",
+          },
+          {
+            title: "Calidad y Entrenamiento",
+            description: "Coaching, monitoreo y mejora de procesos.",
+            type: "Tiempo completo",
+          },
+        ],
+        primaryCta: "Aplicar ahora",
+        helper: "Todas las aplicaciones se gestionan en nuestro portal de vacantes.",
+      },
+      process: {
+        eyebrow: "Cómo funciona",
+        title: "Proceso de aplicación sencillo",
+        description: "Completa tu solicitud en línea y nuestro equipo te contactará si tu perfil encaja.",
+        stepLabel: "Paso",
+        steps: [
+          {
+            title: "Aplicar en línea",
+            description: "Elige una posición y envía tu información.",
+          },
+          {
+            title: "Evaluación",
+            description: "Revisamos tu experiencia y nivel de idioma.",
+          },
+          {
+            title: "Entrevista",
+            description: "Si eres seleccionado, coordinamos una llamada y siguientes pasos.",
+          },
+        ],
+      },
+      cta: {
+        title: "¿Listo para comenzar?",
+        description: "Aplica hoy y forma parte de un equipo que valora el crecimiento y la excelencia.",
+        button: "Aplicar ahora",
+      },
     },
     home: {
       hero: {
@@ -1450,10 +1657,22 @@ export const translations = {
         title: "Nuestro Equipo",
         description: "Liderazgo enfocado en personas, procesos y resultados.",
         members: [
-          { name: "Hugo Hidalgo", role: "Presidente y Fundador" },
-          { name: "Lariely Candelario", role: "Gerente de Operaciones" },
-          { name: "Nittida Castillo", role: "Supervisora de Operaciones" },
-          { name: "Luis Estevez", role: "Líder de QA y Entrenamiento" },
+          { name: "Hugo Hidalgo", role: "Presidente & CEO", image: "/hugo-hidalgo.jpeg" },
+          {
+            name: "Lariely Candelario",
+            role: "Directora Comercial y Administrativa",
+            image: "/Lariely-Candelario.jpeg",
+          },
+          { name: "Emely Rodriguez", role: "Entrenamiento & Calidad", image: "/emely-rodriguez.jpeg" },
+          { name: "Loreinny Rojas", role: "Supervisora de Operaciones", image: "/loreinny-rojas.jpeg" },
+          { name: "Alan Sánchez", role: "Soporte Técnico IT", image: "/alan-sanchez.jpeg" },
+          {
+            name: "Vanyely Peralta",
+            role: "Encargada de Gestion Humana y Cultura Organizacional",
+            image: "/Vanyely-Peralta.jpeg",
+          },
+          { name: "Yelissa Mezon", role: "Supervisor de Proyecto", image: "/Yelissa-Mezon.jpeg" },
+          { name: "Dahiana Valoy", role: "CFO", image: "/Dahiana-Valoy.jpeg" },
         ],
       },
       industries: {
@@ -2021,6 +2240,7 @@ export const translations = {
         about: "Nosotros",
         solutions: "Soluciones",
         blogs: "Blog",
+        careers: "Vacantes",
         contact: "Contáctanos",
       },
       contactLinks: {

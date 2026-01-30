@@ -170,6 +170,17 @@ export function Navigation() {
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <Link
+                      href="/vacantes"
+                      className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+                    >
+                      {t.nav.menu.careers}
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
                       href="#contact"
                       className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
                     >
@@ -279,6 +290,14 @@ export function Navigation() {
                       className="flex items-center justify-between py-3 text-gray-900 font-medium hover:text-primary"
                     >
                       {t.nav.menu.about}
+                      <ChevronRight className="w-4 h-4 text-gray-400" />
+                    </Link>
+                    <Link
+                      href="/vacantes"
+                      onClick={() => setOpen(false)}
+                      className="flex items-center justify-between py-3 text-gray-900 font-medium hover:text-primary"
+                    >
+                      {t.nav.menu.careers}
                       <ChevronRight className="w-4 h-4 text-gray-400" />
                     </Link>
                     <Link

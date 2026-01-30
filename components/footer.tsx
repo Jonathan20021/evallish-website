@@ -29,6 +29,7 @@ export function Footer() {
     { name: t.footer.quickLinks.about, href: "/about" },
     { name: t.footer.quickLinks.solutions, href: "/services" },
     { name: t.footer.quickLinks.blogs, href: "/blog" },
+    { name: t.footer.quickLinks.careers, href: "/vacantes" },
     { name: t.footer.quickLinks.contact, href: "#contact" },
   ]
 

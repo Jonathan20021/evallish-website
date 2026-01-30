@@ -310,8 +310,20 @@ export default function AboutPage() {
                   className="border border-border hover:border-secondary/40 hover-lift transition-all"
                 >
                   <CardContent className="p-6 text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto rounded-full border border-border bg-gradient-to-br from-secondary/10 via-background to-primary/10 flex items-center justify-center">
-                      <span className="text-2xl font-semibold text-foreground">{getInitials(member.name)}</span>
+                    <div className="relative w-24 h-24 mx-auto rounded-full border border-border bg-gradient-to-br from-secondary/10 via-background to-primary/10 overflow-hidden flex items-center justify-center">
+                      {member.image ? (
+                        <Image
+                          src={member.image}
+                          alt={`${member.name} portrait`}
+                          fill
+                          sizes="96px"
+                          className="object-cover"
+                        />
+                      ) : (
+                        <span className="text-2xl font-semibold text-foreground">
+                          {getInitials(member.name)}
+                        </span>
+                      )}
                     </div>
                     <div>
                       <p className="text-lg font-semibold text-foreground">{member.name}</p>
