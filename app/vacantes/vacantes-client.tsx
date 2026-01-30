@@ -53,12 +53,12 @@ export function VacantesClient() {
                   {careers.hero.description}
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-                  <Button size="lg" className="gap-2 group hover-lift" asChild>
-                    <Link href={portalUrl} target="_blank" rel="noopener noreferrer">
-                      {careers.hero.primaryCta}
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </Button>
+                <Button size="lg" className="gap-2 group hover-lift" asChild>
+                  <a href={portalUrl} target="_blank" rel="noopener noreferrer">
+                    {careers.hero.primaryCta}
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </Button>
                   <Button size="lg" variant="outline" className="bg-transparent" asChild>
                     <Link href="#vacantes">{careers.hero.secondaryCta}</Link>
                   </Button>
@@ -92,10 +92,10 @@ export function VacantesClient() {
                   <p className="text-xs uppercase tracking-wider text-foreground/70">{careers.openings.eyebrow}</p>
                   <p className="mt-2 text-base font-semibold text-foreground">{careers.openings.title}</p>
                   <Button size="sm" className="mt-4 w-full gap-2 group" asChild>
-                    <Link href={portalUrl} target="_blank" rel="noopener noreferrer">
+                    <a href={portalUrl} target="_blank" rel="noopener noreferrer">
                       {careers.hero.primaryCta}
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    </a>
                   </Button>
                 </div>
 
@@ -177,7 +177,7 @@ export function VacantesClient() {
 
         {/* Vacancies */}
         <section id="vacantes" className="py-20 lg:py-28 bg-muted/30 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-secondary/5 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-secondary/5 to-transparent pointer-events-none" />
           <div className="container mx-auto px-4 lg:px-6">
             <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-end mb-12">
               <div>
@@ -192,10 +192,10 @@ export function VacantesClient() {
               <div className="glass-strong rounded-2xl p-6 border border-white/30">
                 <p className="text-sm text-foreground/70">{careers.openings.helper}</p>
                 <Button size="lg" className="mt-4 w-full gap-2 group hover-lift" asChild>
-                  <Link href={portalUrl} target="_blank" rel="noopener noreferrer">
+                  <a href={portalUrl} target="_blank" rel="noopener noreferrer">
                     {careers.openings.primaryCta}
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -277,10 +277,10 @@ export function VacantesClient() {
                 </p>
               </div>
               <Button size="lg" variant="secondary" className="gap-2 group" asChild>
-                <Link href={portalUrl} target="_blank" rel="noopener noreferrer">
+                <a href={portalUrl} target="_blank" rel="noopener noreferrer">
                   {careers.cta.button}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
