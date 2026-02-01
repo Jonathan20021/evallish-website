@@ -554,6 +554,7 @@ export const translations = {
           },
           { name: "Yelissa Mezon", role: "Project Supervisor", image: "/Yelissa-Mezon.jpeg" },
           { name: "Dahiana Valoy", role: "CFO", image: "/Dahiana-Valoy.jpeg" },
+          { name: "Nitida Castilla", role: "Operations Supervisor", image: "/nitida.jpeg" },
         ],
       },
       industries: {
@@ -1673,6 +1674,7 @@ export const translations = {
           },
           { name: "Yelissa Mezon", role: "Supervisor de Proyecto", image: "/Yelissa-Mezon.jpeg" },
           { name: "Dahiana Valoy", role: "CFO", image: "/Dahiana-Valoy.jpeg" },
+          { name: "Nitida Castilla", role: "Supervisora de Operaciones", image: "/nitida.jpeg" },
         ],
       },
       industries: {
