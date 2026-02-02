@@ -243,6 +243,37 @@ export const translations = {
           },
         },
       },
+      testimonials: {
+        eyebrow: "Client Testimonials",
+        title: "What our clients say",
+        description: "Results-focused stories from partners who trust Evallish BPO to elevate customer experience.",
+        items: [
+          {
+            name: "Sofia Ramirez",
+            role: "Customer Experience Director",
+            company: "Retail Ecommerce",
+            quote:
+              "Evallish helped us scale multichannel support without sacrificing quality. Our CSAT improved and response times dropped fast.",
+            result: "CSAT +18% in 90 days",
+          },
+          {
+            name: "Daniel Cooper",
+            role: "VP of Operations",
+            company: "Healthcare Services",
+            quote:
+              "Their bilingual team integrated smoothly with our workflows. Reporting is clear and the QA feedback is actionable.",
+            result: "QA compliance 96%",
+          },
+          {
+            name: "Ana Morales",
+            role: "Growth Manager",
+            company: "Fintech Startup",
+            quote:
+              "We launched outbound campaigns in weeks and saw qualified leads immediately. The team is proactive and data-driven.",
+            result: "Lead volume x2",
+          },
+        ],
+      },
       gallery: {
         eyebrow: "Facilities",
         title: "Inside Evallish BPO",
@@ -1362,6 +1393,37 @@ export const translations = {
             features: ["Insights de clientes", "Ejecución de encuestas", "Soporte a decisiones"],
           },
         },
+      },
+      testimonials: {
+        eyebrow: "Testimonios de Clientes",
+        title: "Lo que dicen nuestros clientes",
+        description: "Historias reales de partners que confían en Evallish BPO para elevar su experiencia del cliente.",
+        items: [
+          {
+            name: "Sofía Ramírez",
+            role: "Directora de Experiencia",
+            company: "Ecommerce Retail",
+            quote:
+              "Evallish nos ayudó a escalar soporte multicanal sin perder calidad. Subimos CSAT y bajamos tiempos de respuesta rápidamente.",
+            result: "CSAT +18% en 90 días",
+          },
+          {
+            name: "Daniel Cooper",
+            role: "VP de Operaciones",
+            company: "Servicios de Salud",
+            quote:
+              "Su equipo bilingüe se integró sin fricciones. Los reportes son claros y el feedback de QA es accionable.",
+            result: "Cumplimiento QA 96%",
+          },
+          {
+            name: "Ana Morales",
+            role: "Growth Manager",
+            company: "Fintech",
+            quote:
+              "Lanzamos campañas outbound en semanas y vimos leads calificados de inmediato. El equipo es proactivo y data-driven.",
+            result: "Leads x2",
+          },
+        ],
       },
       gallery: {
         eyebrow: "Instalaciones",

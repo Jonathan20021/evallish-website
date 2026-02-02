@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { HeroSection } from "@/components/home/hero-section"
 import { StatsSection } from "@/components/home/stats-section"
 import { ServicesSection } from "@/components/home/services-section"
+import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { GallerySection } from "@/components/home/gallery-section"
 import { FrameworkSection } from "@/components/home/framework-section"
 import { FaqSection } from "@/components/home/faq-section"
@@ -47,6 +48,7 @@ export default function HomePage() {
         <HeroSection />
         <StatsSection />
         <ServicesSection />
+        <TestimonialsSection />
         <GallerySection />
         <FrameworkSection />
         <FaqSection />
