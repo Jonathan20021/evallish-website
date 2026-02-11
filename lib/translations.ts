@@ -1437,10 +1437,10 @@ export const translations = {
         description: "El propósito y los principios que guían cómo servimos a nuestros clientes",
         missionTitle: "Nuestra Misión",
         missionDescription:
-          "En Evallish BPO, nuestra misión es proporcionar soluciones innovadoras y personalizadas de contact center que mejoren la experiencia del cliente y la eficiencia operacional. Con un enfoque en calidad de servicio y procesos impulsados por tecnología, buscamos empoderar a las empresas para alcanzar su máximo potencial ofreciendo soporte confiable, seamless y cost-effective.",
+          "En Evallish BPO, nuestra misión es proporcionar soluciones innovadoras y personalizadas, impulsadas por la tecnología, que empoderen a las empresas a alcanzar su máximo potencial, ofreciendo soporte confiable, ágil y costo-efectivo en sus procesos y servicios.",
         visionTitle: "Nuestra Visión",
         visionDescription:
-          "Nuestra visión es ser el proveedor líder de servicios de contact center de clase mundial en República Dominicana y más allá, reconocidos por nuestra excelencia en atención al cliente, innovación y desempeño. Nos esforzamos por evolucionar y adaptarnos continuamente a las necesidades de nuestros clientes, asegurando que sus operaciones empresariales estén optimizadas para el éxito en un mercado en constante cambio.",
+          "Ser una referencia regional en servicios de contact center, distinguidos por nuestra excelencia operativa, innovación constante y capacidad de generar valor real para nuestros clientes, acompañándolos en la evolución y optimización de sus operaciones hacia un crecimiento sostenible.",
         valuesTitle: "Nuestros Valores",
         valuesSubtitle: "Principios que guían cada decisión",
         values: [
@@ -1581,12 +1581,12 @@ export const translations = {
       mission: {
         title: "Nuestra Misión",
         description:
-          "En Evallish BPO, nuestra misión es proporcionar soluciones innovadoras y personalizadas de contact center que mejoren la experiencia del cliente y la eficiencia operacional. Con un enfoque en calidad de servicio y procesos impulsados por tecnología, buscamos empoderar a las empresas para alcanzar su máximo potencial ofreciendo soporte confiable, seamless y cost-effective.",
+          "En Evallish BPO, nuestra misión es proporcionar soluciones innovadoras y personalizadas, impulsadas por la tecnología, que empoderen a las empresas a alcanzar su máximo potencial, ofreciendo soporte confiable, ágil y costo-efectivo en sus procesos y servicios.",
       },
       vision: {
         title: "Nuestra Visión",
         description:
-          "Nuestra visión es ser el proveedor líder de servicios de contact center de clase mundial en República Dominicana y más allá, reconocidos por nuestra excelencia en atención al cliente, innovación y desempeño. Nos esforzamos por evolucionar y adaptarnos continuamente a las necesidades de nuestros clientes, asegurando que sus operaciones empresariales estén optimizadas para el éxito en un mercado en constante cambio.",
+          "Ser una referencia regional en servicios de contact center, distinguidos por nuestra excelencia operativa, innovación constante y capacidad de generar valor real para nuestros clientes, acompañándolos en la evolución y optimización de sus operaciones hacia un crecimiento sostenible.",
       },
       values: {
         title: "Nuestros Valores",
